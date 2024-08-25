@@ -13,7 +13,7 @@ Citizen.CreateThread(function()
 
         for h,v in ipairs(Config.FastTravel)do
             if v.ShowBlip then
-                local TravelBlip = BccUtils.Blips:SetBlip(_U('BoardblipName'), v.BlipSprite, 0.2, v.NPCCoords.x,v.NPCCoords.y,v.NPCCoords.z)
+                local TravelBlip = BccUtils.Blips:SetBlip(_U('GroupName'), v.BlipSprite, 0.2, v.NPCCoords.x,v.NPCCoords.y,v.NPCCoords.z)
                 CreatedTravelBlips[#CreatedTravelBlips + 1] = TravelBlip
             end
             if v.SpawnNPC then
